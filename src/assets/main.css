@@ -1,0 +1,112 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+section {
+  min-height: 100vh;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+
+
+
+#grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+
+
+
+@media(max-width:1280px) {
+  .container {
+      width: 100%;
+  }
+}
+
+@media(max-width:768px) {
+  #main {
+      width: 95%;
+  }
+
+  .img {
+      width: 100%;
+  }
+
+  #header {
+      margin: 10px 0;
+      padding: 20px;
+      gap: 10px;
+      justify-content: center;
+  }
+
+  #header h1 {
+      padding: 5px 0;
+  }
+}
+
+@media(max-width:480px) {
+  #header h1 {
+      text-align: center;
+  }
+
+  #search_box {
+      margin: auto;
+  }
+
+}
+
+.left_block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search_icon_box {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 24px;
+  height: 24px;
+}
+
+.cross_icon {
+  display: none;
+}
+
+.search_icon_box._active .cross_icon {
+  display: block;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
